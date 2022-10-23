@@ -1,6 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
-with Support; use Support;
+with Gen_Support; use Gen_Support;
 
 --  Test creating generators from another generator
 

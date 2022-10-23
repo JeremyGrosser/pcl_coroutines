@@ -3,9 +3,9 @@ with Support; use Support;
 
 --  Test declaring a coroutine and not spawning it
 
-procedure Test_Empty is
+procedure Test_Empty_Coroutine is
    C : Coroutine := Create (new Null_Delegate);
    pragma Unreferenced (C);
 begin
    null;
-end Test_Empty;
+end Test_Empty_Coroutine;

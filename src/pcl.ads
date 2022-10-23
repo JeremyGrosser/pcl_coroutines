@@ -5,8 +5,6 @@ with System;
 
 package PCL is
 
-   pragma Linker_Options ("-lpcl");
-
    type Coroutine is private;
    type Callback is access procedure (Data : System.Address)
      with Convention => C;

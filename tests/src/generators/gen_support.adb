@@ -1,4 +1,4 @@
-package body Support is
+package body Gen_Support is
 
    --------------
    -- Generate --
@@ -40,4 +40,4 @@ package body Support is
       end loop;
    end Generate;
 
-end Support;
+end Gen_Support;

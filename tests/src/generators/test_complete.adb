@@ -1,7 +1,7 @@
 with Ada.Command_Line;
 with Ada.Text_IO; use Ada.Text_IO;
 
-with Support; use Support;
+with Gen_Support; use Gen_Support;
 
 --  Test complete iterations on a generator that yields a specific number of
 --  times.

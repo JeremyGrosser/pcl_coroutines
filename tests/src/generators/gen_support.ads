@@ -1,6 +1,6 @@
 with Generators;
 
-package Support is
+package Gen_Support is
 
    --  Package providing helpers for test programs
 
@@ -34,4 +34,4 @@ package Support is
    overriding procedure Generate (D : in out Doubles;
                                   G : Int_Generators.Generator'Class);
 
-end Support;
+end Gen_Support;

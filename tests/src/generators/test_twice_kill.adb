@@ -1,15 +1,15 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
-with Support; use Support;
+with Gen_Support; use Gen_Support;
 
---  Test performing only one iteration on a generator
+--  Test performing two iterations on a generator
 
-procedure Test_Once_Kill is
+procedure Test_Twice_Kill is
    G : constant Int_Generators.Generator :=
      Int_Generators.Create (new Counter_Infinity);
 begin
    for I of G loop
       Put_Line ("Iteration" & Integer'Image (I));
-      exit when I = 0;
+      exit when I = 1;
    end loop;
-end Test_Once_Kill;
+end Test_Twice_Kill;
