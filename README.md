@@ -18,6 +18,6 @@ On Debian systems: `apt install libpcl1-dev`
 ## Local Changes and notes
 
 __2022-10-23__
-Reorganized into a single gpr project built with Alire.
-Unknown license, no copyright info available.
-Tests are built with Alire, not run automatically. Many fail on accessibility checks.
+- Reorganized into a single gpr project built with Alire.
+- Unknown license, no copyright info available.
+- Tests are built with Alire, not run automatically. Many fail on accessibility checks.
