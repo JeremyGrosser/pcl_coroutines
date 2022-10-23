@@ -1,39 +1,23 @@
-Ada 2020 - Generators/Coroutines prototype
-==========================================
+# Ada 2020 - Generators/Coroutines prototype
 
 This repository hosts a prototype for generators/coroutines support in Ada.
 This prototype includes:
 
-* a thin Ada binding to PCL (Portable Coroutine Library): see the `pcl`
-  directory.
-* a wrapper around it to integrate nicely with the GNAT runtime: see the
-  `coroutine` directory.
-* a library leveraging this to provide generators capabilities: see the
-  `generators` directory.
+* a thin Ada binding to PCL (Portable Coroutine Library)
+* a coroutine wrapper around it to integrate nicely with the GNAT runtime
+* a generator library 
 
-Requirements
-------------
+## Requirements
 
 In order to use this prototype, one has first to install PCL (Portable
 Coroutine Library): <http://www.xmailserver.org/libpcl.html> and make the
 library and its headers available to the toolchain.
 
-Then, all the `*.gpr` files must be made available to GPRbuild adding all the
-directories to the `GPR_PROJECT_PATH` environment variables.
+On Debian systems: `apt install libpcl1-dev`
 
-Usage
------
+## Local Changes and notes
 
-This is only a prototype so there is no documentation yet! That being said, if
-you want to use this prototype, take a loot at the `coroutines/tests` and
-`generators/tests` subdirectories: in particular all the `.adb` source files.
-
-If you want to run the testsuite, go to the `test` directory and then build the
-testcases:
-
-```sh
-$ gprbuild -Ptests
-```
-
-Then, execute the `run.py` scripts: the testsuite results will be displayed on
-The standard output.
+__2022-10-23__
+Reorganized into a single gpr project built with Alire.
+Unknown license, no copyright info available.
+Tests are built with Alire, not run automatically. Many fail on accessibility checks.
